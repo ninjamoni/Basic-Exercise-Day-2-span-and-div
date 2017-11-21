@@ -1,0 +1,208 @@
+Warm Up Questions:
+
+What is the div tag and why is it important? What is the difference between div and span elements?
+	<div> tag represents a container unit that can encapsulate other HTML elements and divide the document into section or division. This element is  very important and is primarily used to group other HTML elements. The full potential of <div> tag will be revealed when we start working with Cascading Style Sheets (CSS).
+	<div> - element is an example of a block-level element.  A block-level HTML element always starts on a new line and takes up the full width available.  
+	--> block element --> always new line
+	--> Span element always uses the whole line
+
+What is the purpose of semantic elements in HTML5?
+	Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer. HTML5 offers new semantic elements to define different parts of a web page:  
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+	--> definiert Anordnung in Seite
+
+	
+
+Please tell to your partner the name of an HTML5 Semantic element and he/she needs to describe it, then switch the roles.
+	 --> Article - Article
+
+	The <article> element specifies independent, self-contained content. An article should make sense on its own, and it should be possible to distribute or use it independently from the rest of the web site.
+	Examples of where an <article> element can be used:
+	Forum post
+	Blog post
+	Newspaper article
+	If you need a rule of thumb to decide if something should be an <article>, ask yourself “does this qualifies to go to an RSS”? If the answer is yes, you should consider using it.
+	Although no prescribed rules exist how <article> should be used, it is usual to include heading (<h1> to <h6>) as a direct child of an article.  Common practice is also include to other <article>-s as  child elements, that are pointing to referenced articles (as usual in scientific literature). You can also use <address> (see further) to add the author information.
+	--> Header
+
+	The <header> element represents a container for introductory content or a set of navigational links. A <header> element typically contains:
+	One or more heading elements (<h1>, <h2>, … <h6>)
+	Logo or icon
+	Authorship information
+	You can have several <header> elements in one document. The <header> tag is new tag in HTML5.
+
+Why are Meta Tags important and what can you do with Meta Tags?
+	Metadata is often referred to as ‘data about data’ and one of the ways it’s done on web pages is by means of the <meta> tag. The content of meta tags generally describes information about the HTML page which usually cannot be represented by any other HTML tags. In addition to that, the meta tag can also be used to emulate an HTTP response header (like redirection to a different page) and it has attributes like http-equiv and charset, the details of which have been described clearly on the Mozilla Developer Network.
+	In the past, meta tags were used by search engines to index web pages based on title, description, and even keywords. In a perfect world, if everyone had used them fairly, it would have served as a boon. However, certain websites started overusing them, cramming popular keywords in the hope of getting better search results. Google, recognizing this, announced in 2009 that they don’t use meta keywords or descriptions in their search algorithms for ranking purposes. This is still the policy for most of the search engines, so you can stop wasting webmaster’s time in figuring keywords.
+	Meta tags are the words that are hidden in your code. People browsing your site will just not be able to see them. It is, as Danny Sullivan puts it, a ‘legal’ way of hiding words in your webpages for search engines. The search engines still read them for it to have a simple, summarized idea of what your site is about and what exactly your keywords are.
+	Even though the description meta tags have no effect on search engine rank, they do appear (if you do not misuse description tag) in search results. This means that a person gets to read your description on a search results page before clicking on your link, showing that meta descriptions should be written for people to read rather than for robots to find. So while a good meta description will not improve your ranking, it will increase click-through rates to your website from search pages.
+	Is it possible to have a functional Web page without links?
+
+
+Why is the alt tag important for the use of images?
+	Images are also very important part of every web page. Including images in the web page makes the web page more attractive. To insert an image in the HTML page we use <img> tag. <img> tag doesn’t have a closing tag. It has source attribute (src) that specifies path or the URL of the image, and the alt attribute (alt) which is also required part of the <img> tag - if a browser cannot find an image, it will display the text from the alt attribute. Also, you can provide the width and height attributes of the image as you can see in the example below.
+
+
+How many list types do we have in HTML? Describe them.
+	Unordered list <ul>
+			<li>
+			</li>
+			</ul>
+	.
+	.
+	.
+	Ordered list <ol>
+	1.)
+	2.)
+	3.)
+	DefinitionList <dl>
+	...
+		...Defintion
+
+
+Could we make an entire page layout using tables? How?
+	As we know, tables are used to arrange data into rows, columns and cells.  Tables were officially introduced in HTML 3.2, and in the past were used to layout entire pages. Nowadays,  that role has been taken over by CSS. Table’s elements in HTML are defined from left to right and from top to bottom. The easiest way to explain this is by an example ( see below).
+	All elements of a table are placed within a <table> element. Each row is defined with the <tr> tag and the table header is defined with the <th> tag. By default, table headings‘s content are  formatted bold and centered. Finally,  the table cells are defined with the <td> tag. To  make the table borders visible,  we can use the border attribute as you can see in the example below (Note: this is an obsolete method  for setting table borders, but we will use it   now before we start  working  properly with CSS).  
+	<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title> Table </title>
+</head>
+<body> 
+ 
+<table border="1" >
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Mark</td>
+    <td>Johnson</td>
+    <td>37</td>
+  </tr>
+  <tr>
+    <td>Ana</td>
+    <td>Alexis</td>
+    <td>56</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Smith</td>
+    <td>77</td>
+  </tr>
+</table>
+
+What is the purpose of forms in HTML?
+	To accept input from a user, you must wrap all of your input fields inside a <form> tag. The purpose of the <form> tag is to indicate where and how the user’s input should be sent.
+	The HTML <form> element defines a form that is used to collect user input:
+	<form>
+	.
+	form elements
+	.
+	</form>
+	An HTML form contains form elements. Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+	The <input> element is the most important form element. The <input> element can be displayed in several ways, depending on the type attribute.
+	Here are some examples:
+
+	Note : remember that every input field must have the name attribute.  The value of the name attribute will be used to identify the field on the server side after submitting.
+ 
+	<input type="text"> defines a one-line input field for text input:
+
+What can you achieve using an iframe element?
+	Inline frame or iframe is defined with the <iframe> element. An iframe enable us to embed web page within another web page in the same way we add an image to the web page. This is very powerful option and in the examples below you can see how to embed the another web page or the video from the youtube in our web page using an iframe.
+	<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title> iframe </title>
+</head>
+<body>
+<iframe src="http://www.codefactory.wien" height="500" width="500"></iframe>
+<iframe src="links.html" height="500" width="500"></iframe>
+</body>
+</html>
+
+Why are comments important in well-written code?
+	We can put the comments into HTML pages to describe the page code, this part of code is ignored by the web browsers. This Using HTML comments is a very good practice, especially in documents with a lot of code.
+	
+	HTML comments are placed between <!-- ... --> tags. Any content placed between these tags will be ignored by the browser. In the example below you can see commented document.
+
+How could you play audio and video in HTML file?
+	Audio
+
+	To play an audio file in HTML, use the <audio> element in HTML5. This is a proper way to address the audio today; in the past, Adobe Flash was widely used for this purpose.
+	We can define which audio file to play, using the src attribute.  This is similar to how we define which image to display in an <img> tag, except that we can also add multiple audio source files. The <source> element allows you to specify alternative audio files which the browser may choose from (due to lack of uniform audio format support standard across different systems, this is sometimes necessary). The browser will use the first supported format.
+	We can include the attribute ‘controls’ to add audio controls, like play, pause, and volume. You may also like to use the Volume attribute to set the volume, where 0 is silent, 0.5 is half volume and 1 is full volume. Be aware however that the built
+	-in  audio player is browser dependent.         
+	The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+<!DOCTYPE html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title> Audio </title>
+</head>
+<body>
+  <h1>Autoplay example</h1>
+  <audio
+         src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg"
+         autoplay controls>
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+  <h1>Multiple source files example</h1>
+  <audio controls >
+<source src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" type="audio/ogg">
+    <source src="samefile-but.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
+
+	Video
+
+	To play a video file in HTML, use the <video> element. Again we use the src attribute to define which  video file to play,or we can use the <source> element allows you to specify alternative video files.
+	We can include the attribute ‘controls’ to add video controls, like play, pause, volume and save.
+	The Volume attribute works similarly in Video tags as it does in Audio tags.
+	You may also like to use the  Autoplay attribute if you would like the video to play when the page is loaded.  It is recommended to consider also using the default Muted attribute with video that autoplays, so that the user can choose when they want to listen to your video. However, sometimes autoplaying a video with no audio (as for instance background video of your webpage) can produce interesting results.
+	Again, the text inside the <video> tags will only be displayed in browsers that do not support the <video> element. Discussion about the supported formats apply the same way as for audio formats, so it is a good practice to support a video file in different formats.  
+<!DOCTYPE html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title> Video</title>
+</head>
+<body>
+  <h1>Video example w/ animated GIF preview</h1>
+  <p>based on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">MDN example</a></p>
+  <!DOCTYPE html>
+  <video width="480" controls
+         poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif" >
+    <source
+            src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+            type="video/webm">x`
+    <source
+            src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4"
+            type="video/mp4">
+    <source
+            src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv"
+            type="video/ogg">
+    Your browser doesn't support HTML5 video tag.
+  </video>
+</body>
+</html>
+What is HTML Local Storage?
+	With local storage, web applications can store data locally within the user's browser. Before HTML5, application data had to be stored in cookies, included in every server request. Local storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+	Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+	Local storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data, all new browsers supports Local Storage.
+	The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year. Before you start to use this function of the HTML5, first you must learn JavaScript and this part will be covered in JavaScript Chapter.
